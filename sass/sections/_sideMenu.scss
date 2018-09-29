@@ -1,0 +1,141 @@
+.sideMenu {
+    @include size(188px, 100%);
+    background-color: $sideMenu;
+    position: fixed;
+    z-index: 2;
+    .hamburgerMenu {
+        display: flex;
+        justify-content: flex-end;
+        width: 42%;
+        padding-top: 10px;
+        a {
+            outline: none;
+            color: #7a7a7a;
+            font-size: 24px;
+        }
+    }
+    .logo {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .menuLine {
+        height: 35px;
+        padding-left: 15px;
+        padding-top: 10px;
+        margin-top: 2px;
+        margin-left: -15px;
+        margin-right: -15px;
+        &:hover {
+            background: #232323;
+            border-left: 4px solid $orange;
+            .text a {
+                color: $white;
+            }
+            .icon svg {
+                 fill: $white;
+            }
+        }
+        .icon {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            height: 40px;
+            padding-right: 10px;
+            svg {
+                @include size(16px, 16px);
+                fill: #7a7a7a;
+            }
+        }
+        .text {
+            font-size: 14px;
+            font-weight: 300;
+            font-family: brandFont;
+            display: inline-block;
+            height: 100%;
+            a {
+                color: #7a7a7a;
+                text-decoration: none;
+                outline: none;
+            }
+        }
+    }
+    hr {
+        border-color: #333333;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.yourManager {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+        font-family: Roboto;
+        color: #808080;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .avatarManager {
+        @include size(43px, 43px);
+    }
+    span {
+        align-self: center;
+        font-family: Roboto;
+        color: #56819f;
+        font-size: 14px;
+        font-weight: 300;
+        a {
+            text-decoration: none;
+            color: #56819f;
+            outline: none;
+            margin-left: 10px;
+            &:hover {
+                color: $lightOrange;
+            }
+        }
+    }
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+    .sideMenu {
+        width: 15%;
+    }
+    .hamburgerMenu {
+        min-width: 100%;
+        a {
+        min-width: 100%;
+        text-align: center;
+        }  
+    }
+    .logo, .text {
+    visibility: collapse;
+    }
+    .yourManager {
+    width: 0px;
+    text-align: center;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    border: 1px solid red;
+    height: 0px;
+
+    h2 {
+    visibility: collapse;
+    border: 1px solid red;
+    }
+    .avatarManager {
+        @include size(33px, 33px);
+        align-items: flex-start;
+        position: absolute;
+        display: inline-block;
+        min-width: 100%;
+    }
+    span a {
+          visibility: collapse;
+        }
+    }
+
+}
+

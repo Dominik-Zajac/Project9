@@ -1,0 +1,49 @@
+.c-tabs {
+	text-align: center;
+	.tab {
+		position: relative;
+		background-color: $lightGrey;
+		border-radius: 3px;
+		border: none;
+
+		min-height: 50px;
+		margin: 20px 10px;
+		padding: 10px 45px;
+
+		font-size: 22px;
+		color: $darkGrey;
+		.circle {
+			@include size(20px, 20px);
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			left: 15px;
+			top: 15px;
+		}
+		.circleBlue {
+			background-color: $blue;
+		}
+		.circleOrange {
+			background: $lightOrange;
+		}
+		.circleGreen {
+			background: $darkGreen;
+		}
+	}
+}
+
+.activeTabButton:focus,
+.activeTabButton:hover{
+	background-color: $white;
+	color: $blue;
+	cursor: pointer;
+	outline: none;
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+  .tab {
+  	width: 100%;
+  	max-width: 200px;
+  }
+}

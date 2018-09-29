@@ -1,0 +1,23 @@
+.btn {
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+
+	@include text(Roboto, 18px, 300, center);
+	color: $white;
+	line-height: 42px;
+}
+
+.btnOrange {
+	background-color: $orange;
+}
+.btnLightOrange {
+	background-color: $lightOrange;
+}
+
+.btnDarkGrey {
+	background-color: $darkGrey;
+}
+.btnGrey {
+	background-color: $grey;
+}

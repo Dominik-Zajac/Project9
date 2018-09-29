@@ -1,0 +1,147 @@
+.header {
+	@include size(100%, 60px);
+	display: flex;
+	position: fixed;
+	background: $white;
+	justify-content: right;
+	z-index: 1;
+	border-bottom: 1px solid $paleGrey;
+
+	.topMenu {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		height: 60px;
+		border-left: 1px solid $paleGrey;
+		padding: 20px;
+		&:hover {
+			background-color: $lightGrey;
+			cursor: pointer;
+		}
+		&:hover .numberMoney,
+		&:hover .profileText {
+			color: $lightOrange;
+		}
+		&:hover > a .iconHeader {
+			fill: #000;
+		}
+	}
+	a {
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+	}
+	.ring {
+		@include size(8px, 8px);
+        position: absolute;
+        top: 19px;
+        background: orange;
+        border-radius: 50%;
+	}
+
+	.iconHeader {
+		align-items: center;
+		fill: #979797;
+		position: relative;
+	}
+	.numberMoney {
+		font-family: Roboto;
+		color: #9c9c9c;
+		font-size: 20px;
+		font-weight: 400;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.profileText {
+		font-family: Roboto;
+		color: #56819f;
+		font-size: 13px;
+		font-weight: 300;
+		margin-left: 5px;
+	}
+}
+
+#walletIcon {
+	@include size(17px, 18px);
+}
+#downArrow {
+	@include size(11px, 7px);
+}
+#notificationIcon {
+	@include size(16px, 17px);
+}
+#profileIcon {
+	@include size(17px, 17px);
+}
+#quitIcon {
+	@include size(19px, 15px);
+	margin-right: 10px;
+}
+
+/* Media queries */
+/*@media(max-width: 767px) {
+	.header {
+		@include size(10%, 60px);
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+		background: none;
+		justify-content: flex-start;
+		z-index: 2;
+		border-bottom: 1px solid $paleGrey;
+
+		.topMenu {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			height: 60px;
+			border-left: 1px solid $paleGrey;
+			padding: 20px;
+			&:hover {
+				background-color: $lightGrey;
+				cursor: pointer;
+			}
+			&:hover .numberMoney,
+			&:hover .profileText {
+				color: $lightOrange;
+			}
+			&:hover > a .iconHeader {
+				fill: #000;
+			}
+		}
+		a {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+		}
+		.ring {
+			@include size(8px, 8px);
+	        position: absolute;
+	        top: 19px;
+	        background: orange;
+	        border-radius: 50%;
+		}
+
+		.iconHeader {
+			align-items: center;
+			fill: #979797;
+			position: relative;
+		}
+		.numberMoney {
+			font-family: Roboto;
+			color: #9c9c9c;
+			font-size: 20px;
+			font-weight: 400;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		.profileText {
+			font-family: Roboto;
+			color: #56819f;
+			font-size: 13px;
+			font-weight: 300;
+			margin-left: 5px;
+		}
+	}
+}
+*/

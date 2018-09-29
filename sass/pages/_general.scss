@@ -1,0 +1,143 @@
+.hrGeneral {
+    margin-left: -11px;
+    margin-right: -11px;
+
+    color: #eeeeec;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.generalStatistic {
+    .inputDateBox {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .btn {
+        align-items: center;
+        @include size(41px, 40px);
+        text-align: center;
+        border-radius: 3px;
+        margin-left: 10px;
+        &:hover{
+            background-color: $lightOrange;
+        }
+        .iconRefresh {
+            @include size(15px, 15px);
+            fill: white;
+        }
+    }
+    .diagram {
+        text-align: center; 
+        img {
+            width: 100%; 
+            max-width: 690px;
+            height: auto;
+        }
+    }
+}
+
+.links,
+.linksDashboard {
+    .addLinkBtn {
+        padding: 10px;
+        text-align: center;
+        .btnOrange {
+            border-radius: 3px;
+            @include size(126px, 40px);
+            outline: none;
+            &:hover {
+                background-color: $lightOrange;
+            }  
+        }
+    }
+}
+
+.tableWithLink > .row {
+    align-items: center;
+    &:hover {
+        background-color: #efefef;
+        .iconLink {
+            opacity: 1;
+        }
+        .iconReference {
+            fill: $orange;
+            &:hover {
+                fill: $lightOrange;
+            }
+        }
+        .iconTrash {
+            fill: $darkGrey;
+            &:hover {
+                fill: $grey;
+            }
+        }
+        .smallLink:hover {
+            color: $lightOrange;
+        }
+    }
+    h3 {
+        font-family: Roboto;
+        color: #a6a6a6;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .smallLink {
+        font-family: Roboto;
+        color: #56819f;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 17px;
+        text-decoration: none;
+    }
+}
+.iconLink {
+    @include size(20px, 20px);
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+    .generalStatistic {
+        .inputDateBox {
+            display: flex;
+            //min-width: 100%;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .diagram {
+            text-align: center; 
+            img {
+                width: 100%; 
+                max-width: 690px;
+                height: auto;
+            }
+        }
+    }
+
+    .tableWithLink > .row {
+        text-align: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eeeeec;
+        .iconLink {
+            @include size(30px, 30px);
+            opacity: 1;
+            margin-top: 15px;
+        }  
+        .iconReference {
+            fill: $orange;
+        }
+        .iconTrash {
+            fill: $darkGrey;
+        }
+        h3 {
+            line-height: 15px;
+            text-align: center;
+            padding-left: 0px;
+        }
+    }
+}

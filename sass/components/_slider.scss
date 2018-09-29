@@ -1,0 +1,50 @@
+.c-slider{
+    .number {
+        @include text(Roboto, 14px, 300, center);
+        color: $grey;
+    }
+    .right-number {
+        max-width: 20%;
+        float: right;
+    }
+    .left-number {
+        float: left;
+        bottom: 10px;
+        left: 10px;
+        position: relative;
+    }
+}
+
+input[type="range"] {
+    @include size(489px, 6px);
+    outline: none;
+    border: 0;
+    margin: 8px 0;
+}
+input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
+
+input[type="range"]::-moz-range-track {
+    background: $grey;
+    height: 4px;  
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: transparent;
+    cursor: pointer;
+    width: 0;
+    height: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $orange;
+    border-top: 0 solid transparent;
+    border-radius: 0;
+    position: absolute;
+}
+
+input[type="range"]::-moz-range-progress,
+input[type="range"]::-moz-range-progress {
+    background: $orange; 
+    top: 50px;
+}

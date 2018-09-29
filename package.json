@@ -1,5 +1,5 @@
 {
-  "name": "Projekt7.7",
+  "name": "Projekt9",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,15 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wyrafinowany/Project-7.7.git"
+    "url": "git+https://github.com/Wyrafinowany/Project-9.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Wyrafinowany/Project-7.7/issues"
+    "url": "https://github.com/Wyrafinowany/Project-9/issues"
   },
-  "homepage": "https://github.com/Wyrafinowany/Project-7.7#readme",
+  "homepage": "https://github.com/Wyrafinowany/Project-9#readme",
   "devDependencies": {
     "browser-sync": "^2.24.7"
   }

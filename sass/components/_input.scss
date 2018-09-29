@@ -1,0 +1,23 @@
+.column {
+	@include size(213px, 40px);
+	border-radius: 3px;
+	border: 1px $paleGrey solid;
+	background-color: $white;
+	padding-left: 35px;
+	color: $black;
+	cursor: pointer;
+}
+.column-active:focus {
+	border-color: $darkGrey;
+	color: $black;
+}
+.password-false:focus {
+	border-color: $red;
+}
+
+input[type="password"] {
+	background-image: url('../images/icons/password.svg');
+	background-repeat: no-repeat;
+	background-size: 21px, 12px;
+	background-position: 5% 50%;
+}

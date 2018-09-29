@@ -1,0 +1,24 @@
+.c-underlineParagraph {
+	max-width: 310px;
+	max-height: 35px;
+	border-bottom: 1px solid $paleGrey;
+	margin-bottom: 10px;
+	.underlineText {
+		@include text(Roboto, 16px, 700, left);
+		color: $darkGrey;
+		line-height: 35px;
+	}
+	.underlineNumber {
+		@include text(Roboto, 16px, 300, right);
+		float: right;
+		color: $black;
+		line-height: 35px;
+	}
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+	.c-underlineParagraph{
+  		margin: 0 auto;
+  	}
+}

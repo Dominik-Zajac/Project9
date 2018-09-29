@@ -1,0 +1,31 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Global 
+@import "normalize";
+@import "layout";
+
+// Components
+@import "components/button";
+@import "components/input";
+@import "components/underline-paragraph";
+@import "components/tabs";
+@import "components/table";
+@import "components/calendar";
+@import "components/pagination";
+@import "components/slider";
+@import "components/checkbox";
+@import "components/headline";
+//Sections
+//import "section/registation_form";
+@import "sections/topMenu";
+@import "sections/sideMenu";
+
+//Pages/Views
+//import "pages/registation";
+@import "pages/general";
+
+.unvisible {display: none;}
+.visible-sm {display: none;}
+

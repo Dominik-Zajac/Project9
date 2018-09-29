@@ -1,0 +1,21 @@
+.c-pagination {
+    object {
+        @include size(20px, 20px);
+        padding-top: 8px;
+        color: red;
+        fill: red;
+stroke: red;
+    }
+    button {
+        background: $white;
+        color: $blue;
+        &:hover {
+            color: $orange;
+        }
+        &:focus {
+            background: $paleGrey;
+            color: $darkGrey;
+            border-radius: 3px;
+        }
+    }
+}

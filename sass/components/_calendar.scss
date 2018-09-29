@@ -1,0 +1,38 @@
+.c-calendar {
+    @include size(320px, 40px);
+    border-radius: 3px;
+    border: 1px solid $paleGrey;
+    &:hover {
+        border: 1px solid $grey;
+        cursor: pointer;
+    }
+    .separator {
+        font-size: 20px;
+        color: $paleGrey;
+    }
+    input {
+    @include text(Roboto, 14px, 300, center);
+    color: $black;
+    margin: 8px 10px;
+    }
+    img {
+        @include size(15px, 15px);
+        margin-left: 10px;
+    }
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+    .c-calendar {
+        input {
+            @include text(Roboto, 10px, 300, center);
+            margin: 8px 5px;
+        }
+        img {
+            visibility: collapse;
+        }
+        .date {
+            width: 30%;
+        }
+    }
+}
