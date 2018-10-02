@@ -6,6 +6,7 @@
 	padding-left: 35px;
 	color: $black;
 	cursor: pointer;
+	width: 100%;
 }
 .column-active:focus {
 	border-color: $darkGrey;
@@ -15,7 +16,7 @@
 	border-color: $red;
 }
 
-input[type="password"] {
+.password {
 	background-image: url('../images/icons/password.svg');
 	background-repeat: no-repeat;
 	background-size: 21px, 12px;

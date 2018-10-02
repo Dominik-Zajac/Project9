@@ -4,15 +4,17 @@
 	border-bottom: 1px solid $paleGrey;
 	margin-bottom: 10px;
 	.underlineText {
-		@include text(Roboto, 16px, 700, left);
+		@include text(Roboto, 16px, 700);
 		color: $darkGrey;
 		line-height: 35px;
+		text-align: left;
 	}
 	.underlineNumber {
-		@include text(Roboto, 16px, 300, right);
+		@include text(Roboto, 16px, 300);
 		float: right;
 		color: $black;
 		line-height: 35px;
+		text-align: right;
 	}
 }
 

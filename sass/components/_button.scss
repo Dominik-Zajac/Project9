@@ -3,9 +3,10 @@
 	border: none;
 	cursor: pointer;
 
-	@include text(Roboto, 18px, 300, center);
+	@include text(Roboto, 18px, 300);
 	color: $white;
 	line-height: 42px;
+	text-align: center;
 }
 
 .btnOrange {

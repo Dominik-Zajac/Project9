@@ -1,0 +1,16 @@
+.personalData .row {
+	justify-content: center;
+}
+.column input {
+	@include size(300px, 38px);
+	background-image: none;
+}
+.saveBtn {
+	text-align: center;
+	.btn {
+		outline: none;
+        &:hover {
+           	background-color: $lightOrange;
+        }
+    }
+}

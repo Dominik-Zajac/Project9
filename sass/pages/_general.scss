@@ -38,7 +38,8 @@
 }
 
 .links,
-.linksDashboard {
+.linksDashboard,
+.banners {
     .addLinkBtn {
         padding: 10px;
         text-align: center;
@@ -77,19 +78,15 @@
         }
     }
     h3 {
-        font-family: Roboto;
+        @include text(Roboto, 17px, 700);
         color: #a6a6a6;
         font-size: 16px;
-        font-weight: 700;
-        line-height: 17px;
         text-align: left;
         padding-left: 15px;
     }
     .smallLink {
-        font-family: Roboto;
+        @include text(Roboto, 16px, 300);
         color: #56819f;
-        font-size: 16px;
-        font-weight: 300;
         line-height: 17px;
         text-decoration: none;
     }

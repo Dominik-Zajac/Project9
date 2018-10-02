@@ -53,6 +53,7 @@ menuBanners.addEventListener('click', function(){
     general.classList.add('unvisible');
     statistics.classList.add('unvisible');
     links.classList.add('unvisible');
+    linksDashboard.classList.add('unvisible');
     details.classList.add('unvisible');
     banners.classList.remove('unvisible');
     personalData.classList.add('unvisible');

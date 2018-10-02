@@ -1,7 +1,8 @@
 .c-slider{
     .number {
-        @include text(Roboto, 14px, 300, center);
+        @include text(Roboto, 14px, 300);
         color: $grey;
+        text-align: center;
     }
     .right-number {
         max-width: 20%;

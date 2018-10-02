@@ -360,9 +360,9 @@ template {
 
 .col {
   -ms-flex-preferred-size: 0;
-  flex-basis: 0;
+      flex-basis: 0;
   -ms-flex-positive: 1;
-  flex-grow: 1;
+      flex-grow: 1;
   max-width: 100%;
 }
 
@@ -608,9 +608,9 @@ template {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
-  text-align: center;
   color: #FFF;
   line-height: 42px;
+  text-align: center;
 }
 
 .btnOrange {
@@ -638,6 +638,7 @@ template {
   padding-left: 35px;
   color: #333;
   cursor: pointer;
+  width: 100%;
 }
 
 .column-active:focus {
@@ -649,7 +650,7 @@ template {
   border-color: #FF0000;
 }
 
-input[type="password"] {
+.password {
   background-image: url("../images/icons/password.svg");
   background-repeat: no-repeat;
   background-size: 21px, 12px;
@@ -667,19 +668,19 @@ input[type="password"] {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
-  text-align: left;
   color: #979797;
   line-height: 35px;
+  text-align: left;
 }
 
 .c-underlineParagraph .underlineNumber {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
-  text-align: right;
   float: right;
   color: #333;
   line-height: 35px;
+  text-align: right;
 }
 
 /* Media queries */
@@ -826,9 +827,9 @@ tr:hover > .trashIcon {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
-  text-align: center;
   color: #333;
   margin: 8px 10px;
+  text-align: center;
 }
 
 .c-calendar img {
@@ -843,8 +844,8 @@ tr:hover > .trashIcon {
     font-family: Roboto;
     font-size: 10px;
     font-weight: 300;
-    text-align: center;
     margin: 8px 5px;
+    text-align: center;
   }
   .c-calendar img {
     visibility: collapse;
@@ -882,8 +883,8 @@ tr:hover > .trashIcon {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
-  text-align: center;
   color: #bababa;
+  text-align: center;
 }
 
 .c-slider .right-number {
@@ -1087,18 +1088,18 @@ input[type="range"]::-moz-range-progress {
 
 .header .numberMoney {
   font-family: Roboto;
-  color: #9c9c9c;
   font-size: 20px;
   font-weight: 400;
+  color: #9c9c9c;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .header .profileText {
   font-family: Roboto;
-  color: #56819f;
   font-size: 13px;
   font-weight: 300;
+  color: #56819f;
   margin-left: 5px;
 }
 
@@ -1260,9 +1261,9 @@ input[type="range"]::-moz-range-progress {
 }
 
 .sideMenu .menuLine .text {
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
-  font-family: brandFont;
   display: inline-block;
   height: 100%;
 }
@@ -1289,9 +1290,9 @@ input[type="range"]::-moz-range-progress {
 
 .yourManager h2 {
   font-family: Roboto;
-  color: #808080;
   font-size: 14px;
   font-weight: 500;
+  color: #808080;
 }
 
 .yourManager .avatarManager {
@@ -1300,13 +1301,13 @@ input[type="range"]::-moz-range-progress {
 }
 
 .yourManager span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: Roboto;
   color: #56819f;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .yourManager span a {
@@ -1336,14 +1337,14 @@ input[type="range"]::-moz-range-progress {
     visibility: collapse;
   }
   .yourManager {
-    width: 0px;
-    text-align: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap;
     -ms-flex-pack: center;
         justify-content: center;
+    width: 0px;
+    text-align: center;
     border: 1px solid red;
     height: 0px;
   }
@@ -1412,13 +1413,15 @@ input[type="range"]::-moz-range-progress {
 }
 
 .links .addLinkBtn,
-.linksDashboard .addLinkBtn {
+.linksDashboard .addLinkBtn,
+.banners .addLinkBtn {
   padding: 10px;
   text-align: center;
 }
 
 .links .addLinkBtn .btnOrange,
-.linksDashboard .addLinkBtn .btnOrange {
+.linksDashboard .addLinkBtn .btnOrange,
+.banners .addLinkBtn .btnOrange {
   border-radius: 3px;
   width: 126px;
   height: 40px;
@@ -1426,7 +1429,8 @@ input[type="range"]::-moz-range-progress {
 }
 
 .links .addLinkBtn .btnOrange:hover,
-.linksDashboard .addLinkBtn .btnOrange:hover {
+.linksDashboard .addLinkBtn .btnOrange:hover,
+.banners .addLinkBtn .btnOrange:hover {
   background-color: #FFA200;
 }
 
@@ -1465,19 +1469,19 @@ input[type="range"]::-moz-range-progress {
 
 .tableWithLink > .row h3 {
   font-family: Roboto;
+  font-size: 17px;
+  font-weight: 700;
   color: #a6a6a6;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 17px;
   text-align: left;
   padding-left: 15px;
 }
 
 .tableWithLink > .row .smallLink {
   font-family: Roboto;
-  color: #56819f;
   font-size: 16px;
   font-weight: 300;
+  color: #56819f;
   line-height: 17px;
   text-decoration: none;
 }
@@ -1530,11 +1534,30 @@ input[type="range"]::-moz-range-progress {
   }
 }
 
-.unvisible {
-  display: none;
+.personalData .row {
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
-.visible-sm {
+.column input {
+  width: 300px;
+  height: 38px;
+  background-image: none;
+}
+
+.saveBtn {
+  text-align: center;
+}
+
+.saveBtn .btn {
+  outline: none;
+}
+
+.saveBtn .btn:hover {
+  background-color: #FFA200;
+}
+
+.unvisible {
   display: none;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

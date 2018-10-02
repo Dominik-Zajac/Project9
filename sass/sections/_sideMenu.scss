@@ -47,9 +47,7 @@
             }
         }
         .text {
-            font-size: 14px;
-            font-weight: 300;
-            font-family: brandFont;
+            @include text(Roboto, 14px, 300);
             display: inline-block;
             height: 100%;
             a {
@@ -71,20 +69,16 @@
     display: flex;
     flex-wrap: wrap;
     h2 {
-        font-family: Roboto;
+        @include text(Roboto, 14px, 500);
         color: #808080;
-        font-size: 14px;
-        font-weight: 500;
     }
     .avatarManager {
         @include size(43px, 43px);
     }
     span {
+        @include text(Roboto, 14px, 300);
         align-self: center;
-        font-family: Roboto;
         color: #56819f;
-        font-size: 14px;
-        font-weight: 300;
         a {
             text-decoration: none;
             color: #56819f;
@@ -113,11 +107,11 @@
     visibility: collapse;
     }
     .yourManager {
-    width: 0px;
-    text-align: center;
     display: flex;
     flex-wrap: no-wrap;
     justify-content: center;
+    width: 0px;
+    text-align: center;
     border: 1px solid red;
     height: 0px;
 
@@ -136,6 +130,5 @@
           visibility: collapse;
         }
     }
-
 }
 

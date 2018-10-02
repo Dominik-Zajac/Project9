@@ -45,18 +45,14 @@
 		position: relative;
 	}
 	.numberMoney {
-		font-family: Roboto;
+		@include text(Roboto, 20px, 400);
 		color: #9c9c9c;
-		font-size: 20px;
-		font-weight: 400;
 		margin-right: 10px;
 		margin-left: 10px;
 	}
 	.profileText {
-		font-family: Roboto;
+		@include text(Roboto, 13px, 300);
 		color: #56819f;
-		font-size: 13px;
-		font-weight: 300;
 		margin-left: 5px;
 	}
 }
