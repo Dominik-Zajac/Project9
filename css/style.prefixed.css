@@ -339,7 +339,7 @@ template {
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -564,6 +564,7 @@ template {
   width: calc(100% - 188px);
   background-color: #f2f2ef;
   padding: 20px;
+  min-height: 100%;
 }
 
 .mainBox .smallBox {
@@ -629,7 +630,7 @@ template {
   padding-left: 35px;
   color: #333;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
 }
 
 .column-active:focus {
@@ -649,7 +650,7 @@ template {
 }
 
 .c-underlineParagraph {
-  max-width: 310px;
+  max-width: 80%;
   max-height: 35px;
   border-bottom: 1px solid #E3E3E3;
   margin-bottom: 10px;
@@ -799,7 +800,7 @@ tr:hover > .trashIcon {
 }
 
 .c-calendar {
-  width: 320px;
+  width: 350px;
   height: 40px;
   border-radius: 3px;
   border: 1px solid #E3E3E3;
@@ -1035,8 +1036,8 @@ input[type="range"]::-moz-range-progress {
   display: flex;
   position: fixed;
   background: #FFF;
-  -ms-flex-pack: right;
-      justify-content: right;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   z-index: 1;
   border-bottom: 1px solid #E3E3E3;
 }
@@ -1046,8 +1047,6 @@ input[type="range"]::-moz-range-progress {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
   height: 60px;
   border-left: 1px solid #E3E3E3;
   padding: 20px;
@@ -1517,8 +1516,8 @@ input[type="range"]::-moz-range-progress {
 
 .generalStatistic .diagram canvas {
   width: 100%;
-  max-width: 690px;
   height: auto;
+  margin: 0 auto;
 }
 
 .linksDashboard .addLinkBtn {
@@ -1540,6 +1539,8 @@ input[type="range"]::-moz-range-progress {
 .tableWithLink > .row {
   -ms-flex-align: center;
       align-items: center;
+  max-width: 80%;
+  text-align: center;
 }
 
 .tableWithLink > .row:hover {
@@ -1574,10 +1575,8 @@ input[type="range"]::-moz-range-progress {
   font-family: Roboto;
   font-size: 17px;
   font-weight: 700;
-  color: #a6a6a6;
+  color: red;
   font-size: 16px;
-  text-align: left;
-  padding-left: 15px;
 }
 
 .tableWithLink > .row .smallLink {
@@ -1656,8 +1655,7 @@ input[type="range"]::-moz-range-progress {
 }
 
 .details .tableWrapper table {
-  max-width: 100%;
-  min-width: 800px;
+  min-width: 1500px;
 }
 
 .details .tableWrapper .tableDetails {
@@ -1735,6 +1733,9 @@ input[type="range"]::-moz-range-progress {
 .tableWithLink > .row {
   -ms-flex-align: center;
       align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .tableWithLink > .row:hover {
@@ -1850,6 +1851,8 @@ input[type="range"]::-moz-range-progress {
 .tableWithBanners > .row {
   -ms-flex-align: center;
       align-items: center;
+  margin: 0 auto;
+  max-width: 60%;
 }
 
 .tableWithBanners > .row:hover {

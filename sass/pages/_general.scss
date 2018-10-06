@@ -31,8 +31,9 @@
         text-align: center; 
         canvas {
             width: 100%; 
-            max-width: 690px;
+            //max-width: 690px;
             height: auto;
+            margin: 0 auto;
         }
     }
 }
@@ -54,6 +55,8 @@
 
 .tableWithLink > .row {
     align-items: center;
+    max-width: 80%;
+    text-align: center;
     &:hover {
         background-color: #efefef;
         .iconLink {
@@ -77,10 +80,8 @@
     }
     h3 {
         @include text(Roboto, 17px, 700);
-        color: #a6a6a6;
+        color: red;
         font-size: 16px;
-        text-align: left;
-        padding-left: 15px;
     }
     .smallLink {
         @include text(Roboto, 16px, 300);

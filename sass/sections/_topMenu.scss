@@ -3,14 +3,13 @@
 	display: flex;
 	position: fixed;
 	background: $white;
-	justify-content: right;
+	justify-content: flex-end;
 	z-index: 1;
 	border-bottom: 1px solid $paleGrey;
 
 	.topMenu {
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
 		height: 60px;
 		border-left: 1px solid $paleGrey;
 		padding: 20px;
