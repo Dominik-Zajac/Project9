@@ -1,58 +1,19 @@
-.hrGeneral {
-    margin-left: -11px;
-    margin-right: -11px;
-
-    color: #eeeeec;
-    border-width: 1px;
-    border-style: solid;
-}
-
-.generalStatistic {
-    .inputDateBox {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-    .btn {
-        align-items: center;
-        @include size(41px, 40px);
-        text-align: center;
-        border-radius: 3px;
-        margin-left: 10px;
-        &:hover{
-            background-color: $lightOrange;
-        }
-        .iconRefresh {
-            @include size(15px, 15px);
-            fill: white;
-        }
-    }
-    .diagram {
-        text-align: center; 
-        canvas {
-            width: 100%; 
-            max-width: 690px;
-            height: auto;
-        }
-    }
-}
-
-.linksDashboard {
+.banners {
     .addLinkBtn {
         padding: 10px;
         text-align: center;
         .btnOrange {
-            border-radius: 3px;
             @include size(126px, 40px);
+            border-radius: 3px;
             outline: none;
             &:hover {
-                background-color: $lightOrange;
+                background-color: $orangeHover;
             }  
         }
     }
 }
 
-.tableWithLink > .row {
+.tableWithBanners > .row {
     align-items: center;
     &:hover {
         background-color: #efefef;
@@ -62,7 +23,7 @@
         .iconReference {
             fill: $orange;
             &:hover {
-                fill: $lightOrange;
+                fill: $orangeHover;
             }
         }
         .iconTrash {
@@ -72,7 +33,7 @@
             }
         }
         .smallLink:hover {
-            color: $lightOrange;
+            color: $orangeHover;
         }
     }
     h3 {
@@ -88,11 +49,16 @@
         line-height: 17px;
         text-decoration: none;
     }
+    .iconLink {
+        @include size(20px, 20px);
+        opacity: 0;
+        cursor: pointer;    
+    }
 }
 
 /* Media queries */
 @media(max-width: 767px) {
-    .tableWithLink > .row {
+    .tableWithBanners > .row {
         text-align: center;
         margin-bottom: 15px;
         border-bottom: 1px solid #eeeeec;

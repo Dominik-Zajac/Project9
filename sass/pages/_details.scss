@@ -1,0 +1,88 @@
+.details {
+/* Calendar */
+.inputDateBox {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 15px;
+    }
+    .btn {
+        @include size(41px, 40px);
+        border-radius: 3px;
+        margin-left: 10px;
+        &:hover{
+            background-color: $orangeHover;
+        }
+        .iconRefresh {
+            @include size(15px, 15px);
+            fill: white;
+        }
+    }
+/* Table */
+    .tableWrapper {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 20px;
+        overflow-x: auto;
+        text-align: center;
+        table {
+            max-width: 100%;
+            min-width: 800px;
+        }
+        .tableDetails {
+            border-collapse: collapse;
+        }
+        a {
+            @include text(Roboto, 13px, 700);
+            color: #a6a6a6;
+            text-decoration: none;
+            line-height: 40px;
+            &:hover {
+                color: #333;
+                background-color: $rowHover;
+                padding: 10px 0px;
+                border-radius: 3px;
+            }
+        }
+        .tableText {
+            p {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*Line*/ 
+.hrDetails {
+    margin: 0;
+    width: 100%;
+    border: (1px solid #eeeeec);
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+    .c-pagination {
+        object {
+            @include size(35px, 35px);
+        }
+        button {
+            display: none;
+            &:first-child {
+                width: 50%;
+                display: inline;
+                a:after {
+                    content: "Previous Page";
+                }
+            }
+            &:last-child {
+                display: inline;
+                a:after {
+                    content: "Next Page";
+                }
+            }
+        }
+    }
+}
+

@@ -8,7 +8,6 @@ var menuPayout = document.getElementById('menuPayout');
 var menuPostback = document.getElementById('menuPostback');
 
 var general = document.getElementById('general');
-var statistics = document.getElementById('statistics');
 var details = document.getElementById('details');
 var links = document.getElementById('links');
 var linksDashboard = document.getElementById('linksDashboard');
@@ -19,9 +18,8 @@ var postback = document.getElementById('postback');
 
 menuGeneral.addEventListener('click', function(){
     general.classList.remove('unvisible');
-    statistics.classList.remove('unvisible');
-    links.classList.remove('unvisible');
-    linksDashboard.classList.add('unvisible');
+    links.classList.add('unvisible');
+    linksDashboard.classList.remove('unvisible');
     details.classList.add('unvisible');
     banners.classList.add('unvisible');
     personalData.classList.add('unvisible');
@@ -30,8 +28,8 @@ menuGeneral.addEventListener('click', function(){
 });
 menuDetails.addEventListener('click', function(){
     general.classList.add('unvisible');
-    statistics.classList.add('unvisible');
     links.classList.add('unvisible');
+    linksDashboard.classList.add('unvisible');
     details.classList.remove('unvisible');
     banners.classList.add('unvisible');
     personalData.classList.add('unvisible');
@@ -40,7 +38,6 @@ menuDetails.addEventListener('click', function(){
 });
 menuLinks.addEventListener('click', function(){
     general.classList.add('unvisible');
-    statistics.classList.add('unvisible');
     links.classList.remove('unvisible');
     linksDashboard.classList.add('unvisible');
     details.classList.add('unvisible');
@@ -51,7 +48,6 @@ menuLinks.addEventListener('click', function(){
 });
 menuBanners.addEventListener('click', function(){
     general.classList.add('unvisible');
-    statistics.classList.add('unvisible');
     links.classList.add('unvisible');
     linksDashboard.classList.add('unvisible');
     details.classList.add('unvisible');
@@ -62,8 +58,8 @@ menuBanners.addEventListener('click', function(){
 });
 menuPersonalData.addEventListener('click', function(){
     general.classList.add('unvisible');
-    statistics.classList.add('unvisible');
     links.classList.add('unvisible');
+    linksDashboard.classList.add('unvisible');
     details.classList.add('unvisible');
     banners.classList.add('unvisible');
     personalData.classList.remove('unvisible');
@@ -72,8 +68,8 @@ menuPersonalData.addEventListener('click', function(){
 });
 menuPayout.addEventListener('click', function(){
     general.classList.add('unvisible');
-    statistics.classList.add('unvisible');
     links.classList.add('unvisible');
+    linksDashboard.classList.add('unvisible');
     details.classList.add('unvisible');
     banners.classList.add('unvisible');
     personalData.classList.add('unvisible');
@@ -82,8 +78,8 @@ menuPayout.addEventListener('click', function(){
 });
 menuPostback.addEventListener('click', function(){
     general.classList.add('unvisible');
-    statistics.classList.add('unvisible');
     links.classList.add('unvisible');
+    linksDashboard.classList.add('unvisible');
     details.classList.add('unvisible');
     banners.classList.add('unvisible');
     personalData.classList.add('unvisible');

@@ -26,12 +26,17 @@
 	}
 }
 tr { 
-    border-top: 1px solid $paleGrey;
+    border-bottom: 1px solid $paleGrey;
 	&:last-of-type {
 		border-bottom: 1px solid $paleGrey;
 	}
-	&:hover {
-		background-color: rgba(177, 191, 191, 0.18);
+}
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(177, 191, 191, 0.18);
+			cursor: pointer;
+		}
 	}
 }
 

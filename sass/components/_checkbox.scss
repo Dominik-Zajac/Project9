@@ -19,8 +19,8 @@
         opacity: 0;
         cursor: pointer;
         &:checked ~ .checkmark {
-            background-color: $green;
-            border-color: $green;
+            background-color: green;
+            border-color: green;
             &:after {
                 display: block;
             }

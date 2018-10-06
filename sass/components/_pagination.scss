@@ -1,10 +1,18 @@
 .c-pagination {
+    text-align: center;
     object {
         @include size(20px, 20px);
         padding-top: 8px;
-        color: red;
-        fill: red;
-stroke: red;
+    }
+    .btnPagination {
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+
+    @include text(Roboto, 18px, 300);
+    line-height: 42px;
+    text-align: center;
+    outline: none;
     }
     button {
         background: $white;

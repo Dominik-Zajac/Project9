@@ -1,0 +1,102 @@
+.payout {
+.inputDateBox {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 15px;
+    }
+    .btn {
+        @include size(41px, 40px);
+        align-items: center;
+        text-align: center;
+        border-radius: 3px;
+        margin-left: 10px;
+        &:hover{
+            background-color: $orangeHover;
+        }
+        .iconRefresh {
+            @include size(15px, 15px);
+            fill: white;
+        }
+    }
+}
+
+.tableWithPayout {
+    min-width: 100%;
+    text-align: center;
+    svg {
+        @include size(7px, 5px);
+        display: none;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    a {
+        @include text(Roboto, 13px, 700);
+        color: #a6a6a6;
+        text-decoration: none;
+        line-height: 60px;
+        &:hover {
+            color: #333;
+            background-color: #efefef;
+            padding: 10px 20px;
+            border-radius: 3px;
+            svg {
+                display: initial;
+            }
+        }
+    }
+    .rowPayout {
+         &:hover {
+            background-color: #efefef;
+        }       
+        h3 {
+            @include text(Roboto, 13px, 300);
+            color: #000;
+        }
+    }
+}
+
+.hrPayout {
+    margin: 0;
+    color: #eeeeec;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+    .tableWithPayout {
+  
+    svg {
+        @include size(7px, 5px);
+        display: none;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    a {
+        @include text(Roboto, 13px, 700);
+
+        color: #a6a6a6;
+        text-decoration: none;
+        line-height: 60px;
+        &:hover {
+            color: #333;
+            background-color: #efefef;
+            padding: 10px 20px;
+            border-radius: 3px;
+            svg {
+                display: initial;
+            }
+        }
+    }
+    .rowPayout {
+         &:hover {
+            background-color: #efefef;
+        }       
+        h3 {
+            @include text(Roboto, 13px, 300);
+            color: #000;
+        }
+    }
+}
+}

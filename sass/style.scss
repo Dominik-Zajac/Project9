@@ -21,12 +21,13 @@
 //import "section/registation_form";
 @import "sections/topMenu";
 @import "sections/sideMenu";
+@import "sections/modals";
 
 //Pages/Views
 //import "pages/registation";
 @import "pages/general";
+@import "pages/details";
+@import "pages/links";
+@import "pages/banners";
 @import "pages/personalData";
-
-.unvisible {
-  display: none;
-}
+@import "pages/payout";
