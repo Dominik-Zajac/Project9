@@ -78,13 +78,15 @@
     }
 
     .tableWithLink > .row {
-        text-align: center;
-        margin-bottom: 15px;
+        align-items: center;
+        min-width: 100%;
         border-bottom: 1px solid #eeeeec;
+        text-align: center;
         .iconLink {
             @include size(30px, 30px);
             opacity: 1;
             margin-top: 15px;
+            text-align: center;
         }  
         .iconReference {
             fill: $orange;
@@ -95,7 +97,6 @@
         h3 {
             line-height: 15px;
             text-align: center;
-            padding-left: 0px;
         }
     }
 }

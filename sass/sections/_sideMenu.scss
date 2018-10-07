@@ -95,7 +95,10 @@
 /* Media queries */
 @media(max-width: 767px) {
     .sideMenu {
-        width: 15%;
+        width: 100px;
+        .menuLine {
+            height: 40px;
+        }
     }
     .hamburgerMenu {
         min-width: 100%;
@@ -108,25 +111,15 @@
     visibility: collapse;
     }
     .yourManager {
-    display: flex;
-    flex-wrap: no-wrap;
-    justify-content: center;
-    
-    width: 0px;
-    text-align: center;
-    border: 1px solid red;
-    height: 0px;
-
     h2 {
     visibility: collapse;
-    border: 1px solid red;
+        margin: 0 auto;
     }
     .avatarManager {
         @include size(33px, 33px);
-        align-items: flex-start;
-        position: absolute;
-        display: inline-block;
-        min-width: 100%;
+        margin-top: 20px;
+                    display: inline-block;
+            text-align: center;
     }
     span a {
           visibility: collapse;

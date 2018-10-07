@@ -4,7 +4,7 @@
 	position: fixed;
 	background: $white;
 	justify-content: flex-end;
-	z-index: 1;
+	z-index: 2;
 	border-bottom: 1px solid $paleGrey;
 
 	.topMenu {
@@ -72,4 +72,57 @@
 	@include size(19px, 15px);
 	margin-right: 10px;
 }
+
+/* Media queries */
+@media(max-width: 767px) {
+	.header {
+		@include size(100px, 60px);
+		display: flex;
+		flex-direction: column;
+		background: none;
+		justify-content: flex-start;
+		z-index: 3;
+		border-bottom: none;
+		top: 55%;
+	  	margin: 0 auto;
+
+		.topMenu {
+			align-items: center;
+			height: 45px;
+			border-left: none;
+			padding: 25px;
+			display: inline-block;
+			text-align: center;
+			&:hover {
+				background-color: initial;
+			}
+			&:hover > a .iconHeader {
+				fill: white;
+			}
+		}
+		a {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+		}
+		.ring {
+			display: none;
+		}
+		.iconHeader {
+			align-items: center;
+			fill: #979797;
+			position: relative;
+		}
+		#downArrow {
+			display: none;
+		}
+		.numberMoney {
+			display: none;
+		}
+		.profileText {
+			display: none;
+		}
+	}
+}
+
 

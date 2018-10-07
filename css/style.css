@@ -992,7 +992,7 @@ input[type="range"]::-moz-range-progress {
   position: fixed;
   background: #FFF;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 2;
   border-bottom: 1px solid #E3E3E3;
 }
 
@@ -1080,6 +1080,58 @@ input[type="range"]::-moz-range-progress {
   width: 19px;
   height: 15px;
   margin-right: 10px;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  .header {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-start;
+    z-index: 3;
+    border-bottom: none;
+    top: 55%;
+    margin: 0 auto;
+  }
+  .header .topMenu {
+    align-items: center;
+    height: 45px;
+    border-left: none;
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
+  }
+  .header .topMenu:hover {
+    background-color: initial;
+  }
+  .header .topMenu:hover > a .iconHeader {
+    fill: white;
+  }
+  .header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .header .ring {
+    display: none;
+  }
+  .header .iconHeader {
+    align-items: center;
+    fill: #979797;
+    position: relative;
+  }
+  .header #downArrow {
+    display: none;
+  }
+  .header .numberMoney {
+    display: none;
+  }
+  .header .profileText {
+    display: none;
+  }
 }
 
 .sideMenu {
@@ -1204,7 +1256,10 @@ input[type="range"]::-moz-range-progress {
 /* Media queries */
 @media (max-width: 767px) {
   .sideMenu {
-    width: 15%;
+    width: 100px;
+  }
+  .sideMenu .menuLine {
+    height: 40px;
   }
   .hamburgerMenu {
     min-width: 100%;
@@ -1216,26 +1271,16 @@ input[type="range"]::-moz-range-progress {
   .logo, .text {
     visibility: collapse;
   }
-  .yourManager {
-    display: flex;
-    flex-wrap: no-wrap;
-    justify-content: center;
-    width: 0px;
-    text-align: center;
-    border: 1px solid red;
-    height: 0px;
-  }
   .yourManager h2 {
     visibility: collapse;
-    border: 1px solid red;
+    margin: 0 auto;
   }
   .yourManager .avatarManager {
     width: 33px;
     height: 33px;
-    align-items: flex-start;
-    position: absolute;
+    margin-top: 20px;
     display: inline-block;
-    min-width: 100%;
+    text-align: center;
   }
   .yourManager span a {
     visibility: collapse;
@@ -1667,15 +1712,17 @@ input[type="range"]::-moz-range-progress {
     max-width: 100%;
   }
   .tableWithLink > .row {
-    text-align: center;
-    margin-bottom: 15px;
+    align-items: center;
+    min-width: 100%;
     border-bottom: 1px solid #eeeeec;
+    text-align: center;
   }
   .tableWithLink > .row .iconLink {
     width: 30px;
     height: 30px;
     opacity: 1;
     margin-top: 15px;
+    text-align: center;
   }
   .tableWithLink > .row .iconReference {
     fill: #F58220;
@@ -1686,7 +1733,6 @@ input[type="range"]::-moz-range-progress {
   .tableWithLink > .row h3 {
     line-height: 15px;
     text-align: center;
-    padding-left: 0px;
   }
 }
 
@@ -1816,6 +1862,13 @@ input[type="range"]::-moz-range-progress {
 
 .unvisible {
   display: none;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  .personalData .row {
+    text-align: center;
+  }
 }
 
 .payout .inputDateBox {

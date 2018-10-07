@@ -17,3 +17,10 @@
 .unvisible {
   display: none;
 }
+
+/* Media queries */
+@media(max-width: 767px) {
+	.personalData .row {
+		text-align: center;
+	}
+}
