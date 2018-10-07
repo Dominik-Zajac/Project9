@@ -1,5 +1,5 @@
 .c-calendar {
-    @include size(350px, 40px);
+    @include size(370px, 40px);
     border-radius: 3px;
     border: 1px solid $paleGrey;
     &:hover {
@@ -18,7 +18,7 @@
     }
     img {
         @include size(15px, 15px);
-        margin-left: 10px;
+
     }
 }
 
