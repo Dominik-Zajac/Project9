@@ -2,13 +2,11 @@
 .inputDateBox {
     display: flex;
     justify-content: center;
-
     margin-bottom: 15px;
     }
     .btn {
         @include size(41px, 40px);
         align-items: center;
-        text-align: center;
         border-radius: 3px;
         margin-left: 10px;
         &:hover{
@@ -31,13 +29,13 @@
         margin-left: 5px;
     }
     a {
-        @include text(Roboto, 13px, 700);
+        @include text($main-font, 13px, $bold-weight);
         color: #a6a6a6;
         text-decoration: none;
         line-height: 60px;
         &:hover {
             color: #333;
-            background-color: #efefef;
+            background-color: $rowHover;
             padding: 10px 20px;
             border-radius: 3px;
             svg {
@@ -47,10 +45,10 @@
     }
     .rowPayout {
          &:hover {
-            background-color: #efefef;
+            background-color: $rowHover;
         }       
         h3 {
-            @include text(Roboto, 13px, 300);
+            @include text($main-font, 13px, $normal-weight);
             color: #000;
         }
     }
@@ -66,37 +64,9 @@
 /* Media queries */
 @media(max-width: 767px) {
     .tableWithPayout {
-  
-    svg {
-        @include size(7px, 5px);
-        display: none;
-        margin-bottom: 2px;
-        margin-left: 5px;
-    }
-    a {
-        @include text(Roboto, 13px, 700);
+        a {
+         line-height: 40px;
+        }
 
-        color: #a6a6a6;
-        text-decoration: none;
-        line-height: 60px;
-        &:hover {
-            color: #333;
-            background-color: #efefef;
-            padding: 10px 20px;
-            border-radius: 3px;
-            svg {
-                display: initial;
-            }
-        }
     }
-    .rowPayout {
-         &:hover {
-            background-color: #efefef;
-        }       
-        h3 {
-            @include text(Roboto, 13px, 300);
-            color: #000;
-        }
-    }
-}
 }

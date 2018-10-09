@@ -1,21 +1,20 @@
 .column {
 	@include size(213px, 40px);
 	border-radius: 3px;
-	border: 1px $paleGrey solid;
-	background-color: $white;
+	border: 1px $borderGrey solid;
+	background-color: #FFF;
 	padding-left: 35px;
-	color: $black;
+	color: #333;
 	cursor: pointer;
 	width: 80%;
 }
 .column-active:focus {
-	border-color: $darkGrey;
-	color: $black;
+	border-color: #979797;
+	color: #333;
 }
 .password-false:focus {
-	border-color: $red;
+	border-color: #FF0000;
 }
-
 .password {
 	background-image: url('../images/icons/password.svg');
 	background-repeat: no-repeat;

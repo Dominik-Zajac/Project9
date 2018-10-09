@@ -1,4 +1,4 @@
-.checkboxLine {
+/*.checkboxLine {
     display: inline-block;
     line-height: 25px;
     position: relative;
@@ -12,8 +12,6 @@
     &:hover {
         background: $grey;
     }
-
-/* ---- hide browser default checkbox ---- */
     input {
         position: absolute;
         opacity: 0;
@@ -26,8 +24,6 @@
             }
         }
     }
-
-/* ---- create custom checkbox ---- */
     .checkmark {
         position: absolute;
         top: 13px;
@@ -50,7 +46,8 @@
             transform: rotate(45deg);
           }
         &:hover {
-            background-color: green;//$lightPositiveNot;
+            background-color: green
         }
     }
   }
+*/

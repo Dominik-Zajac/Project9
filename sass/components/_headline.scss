@@ -1,20 +1,17 @@
 .headlineText {
-	font-family: Roboto;
-	color: #a6a6a6;
-	font-size: 16px;
-	font-weight: 700;
+	@include text($main-font, 16px, $bold-weight);
+	color: $paragraph-color;
 	text-align: left;
 	text-transform: uppercase;
 }
 
 .subheadingText {
-	font-family: Roboto;
-	color: #a6a6a6;
-	font-size: 16px;
-	font-weight: 700;
+	@include text($main-font, 16px, $bold-weight);
+	color: $paragraph-color;
 	text-align: left;
 }
 
+/*Media queries */
 @media(max-width: 767px) {
 	.headlineText,
 	.subheadingText {

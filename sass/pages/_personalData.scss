@@ -10,12 +10,9 @@
 	.btn {
 		outline: none;
         &:hover {
-           	background-color: $lightOrange;
+           	background-color: $orangeHover;
         }
     }
-}
-.unvisible {
-  display: none;
 }
 
 /* Media queries */

@@ -2,11 +2,11 @@
     @include size(188px, 100%);
     background-color: $sideMenu;
     position: fixed;
+
     z-index: 2;
     .hamburgerMenu {
         display: flex;
         justify-content: flex-end;
-
         width: 42%;
         padding-top: 10px;
         a {
@@ -26,14 +26,15 @@
         margin-top: 2px;
         margin-left: -15px;
         margin-right: -15px;
+        cursor: pointer;
         &:hover {
             background: #232323;
-            border-left: 4px solid $orange;
+            border-left: 4px solid #F58220;
             .text a {
-                color: $white;
+                color: $whiteIconHover;
             }
             .icon svg {
-                 fill: $white;
+                 fill: $whiteIconHover;
             }
         }
         .icon {
@@ -48,7 +49,7 @@
             }
         }
         .text {
-            @include text(Roboto, 14px, 300);
+            @include text($main-font, 14px, $normal-weight);
             display: inline-block;
             height: 100%;
             a {
@@ -66,18 +67,18 @@
 }
 
 .yourManager {
-    width: 75%;
     display: flex;
     flex-wrap: wrap;
+    width: 75%;
     h2 {
-        @include text(Roboto, 14px, 500);
+        @include text($main-font, 14px, $normal-weight);
         color: #808080;
     }
     .avatarManager {
         @include size(43px, 43px);
     }
     span {
-        @include text(Roboto, 14px, 300);
+        @include text($main-font, 14px, $normal-weight);
         align-self: center;
         color: #56819f;
         a {
@@ -86,7 +87,7 @@
             outline: none;
             margin-left: 10px;
             &:hover {
-                color: $lightOrange;
+                color: $orangeHover;
             }
         }
     }
@@ -95,7 +96,7 @@
 /* Media queries */
 @media(max-width: 767px) {
     .sideMenu {
-        width: 100px;
+        width: 15%;
         .menuLine {
             height: 40px;
         }
@@ -104,6 +105,7 @@
         min-width: 100%;
         a {
         min-width: 100%;
+        padding-top: 10px;
         text-align: center;
         }  
     }
@@ -111,19 +113,22 @@
     visibility: collapse;
     }
     .yourManager {
+        width: 100%;
+        margin: 0 auto;
     h2 {
     visibility: collapse;
-        margin: 0 auto;
+    margin: 0 auto;
     }
     .avatarManager {
-        @include size(33px, 33px);
-        margin-top: 20px;
-                    display: inline-block;
-            text-align: center;
+        @include size(33px, 33px);       
     }
     span a {
-          visibility: collapse;
+        visibility: collapse;
         }
+    }
+    /* Hamburger menu */
+     .unvisible-menu {
+        display: none;
     }
 }
 

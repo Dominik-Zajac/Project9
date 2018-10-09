@@ -1,4 +1,3 @@
-
 var menuGeneral = document.getElementById('menuGeneral');
 var menuDetails = document.getElementById('menuDetails');
 var menuLinks = document.getElementById('menuLinks');
@@ -16,7 +15,7 @@ var personalData = document.getElementById('personalData');
 var payout = document.getElementById('payout');
 var postback = document.getElementById('postback');
 
-menuGeneral.addEventListener('click', function(){
+menuGeneral.addEventListener('click', function() {
     general.classList.remove('unvisible');
     links.classList.add('unvisible');
     linksDashboard.classList.remove('unvisible');
@@ -26,7 +25,7 @@ menuGeneral.addEventListener('click', function(){
     payout.classList.add('unvisible');
     postback.classList.add('unvisible');
 });
-menuDetails.addEventListener('click', function(){
+menuDetails.addEventListener('click', function() {
     general.classList.add('unvisible');
     links.classList.add('unvisible');
     linksDashboard.classList.add('unvisible');
@@ -36,7 +35,7 @@ menuDetails.addEventListener('click', function(){
     payout.classList.add('unvisible');
     postback.classList.add('unvisible');
 });
-menuLinks.addEventListener('click', function(){
+menuLinks.addEventListener('click', function() {
     general.classList.add('unvisible');
     links.classList.remove('unvisible');
     linksDashboard.classList.add('unvisible');
@@ -46,7 +45,7 @@ menuLinks.addEventListener('click', function(){
     payout.classList.add('unvisible');
     postback.classList.add('unvisible');
 });
-menuBanners.addEventListener('click', function(){
+menuBanners.addEventListener('click', function() {
     general.classList.add('unvisible');
     links.classList.add('unvisible');
     linksDashboard.classList.add('unvisible');
@@ -56,7 +55,7 @@ menuBanners.addEventListener('click', function(){
     payout.classList.add('unvisible');
     postback.classList.add('unvisible');
 });
-menuPersonalData.addEventListener('click', function(){
+menuPersonalData.addEventListener('click', function() {
     general.classList.add('unvisible');
     links.classList.add('unvisible');
     linksDashboard.classList.add('unvisible');
@@ -66,7 +65,7 @@ menuPersonalData.addEventListener('click', function(){
     payout.classList.add('unvisible');
     postback.classList.add('unvisible');
 });
-menuPayout.addEventListener('click', function(){
+menuPayout.addEventListener('click', function() {
     general.classList.add('unvisible');
     links.classList.add('unvisible');
     linksDashboard.classList.add('unvisible');
@@ -76,7 +75,7 @@ menuPayout.addEventListener('click', function(){
     payout.classList.remove('unvisible');
     postback.classList.add('unvisible');
 });
-menuPostback.addEventListener('click', function(){
+menuPostback.addEventListener('click', function() {
     general.classList.add('unvisible');
     links.classList.add('unvisible');
     linksDashboard.classList.add('unvisible');

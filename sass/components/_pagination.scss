@@ -9,20 +9,20 @@
     border: none;
     cursor: pointer;
 
-    @include text(Roboto, 18px, 300);
+    @include text($main-font, 18px, $normal-weight);
     line-height: 42px;
     text-align: center;
     outline: none;
     }
     button {
-        background: $white;
-        color: $blue;
+        background: #FFF;
+        color: #56819F;
         &:hover {
-            color: $orange;
+            color: #F58220;
         }
         &:focus {
-            background: $paleGrey;
-            color: $darkGrey;
+            background: #E3E3E3;
+            color: 979797;
             border-radius: 3px;
         }
     }

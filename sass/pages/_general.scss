@@ -1,12 +1,3 @@
-.hrGeneral {
-    margin-left: -11px;
-    margin-right: -11px;
-
-    color: #eeeeec;
-    border-width: 1px;
-    border-style: solid;
-}
-
 .generalStatistic {
     .inputDateBox {
         display: flex;
@@ -14,24 +5,23 @@
         margin-bottom: 15px;
     }
     .btn {
-        align-items: center;
         @include size(41px, 40px);
+        align-items: center;
         text-align: center;
         border-radius: 3px;
         margin-left: 10px;
         &:hover{
-            background-color: $lightOrange;
+            background-color: $orangeHover;
         }
         .iconRefresh {
             @include size(15px, 15px);
-            fill: white;
+            fill: #FFF;
         }
     }
     .diagram {
         text-align: center; 
         canvas {
             width: 100%; 
-            //max-width: 690px;
             height: auto;
             margin: 0 auto;
         }
@@ -43,11 +33,11 @@
         padding: 10px;
         text-align: center;
         .btnOrange {
-            border-radius: 3px;
             @include size(126px, 40px);
+            border-radius: 3px;
             outline: none;
             &:hover {
-                background-color: $lightOrange;
+                background-color: $orangeHover;
             }  
         }
     }
@@ -56,62 +46,80 @@
 .tableWithLink > .row {
     align-items: center;
     max-width: 80%;
-    text-align: center;
     &:hover {
         background-color: #efefef;
         .iconLink {
             opacity: 1;
         }
         .iconReference {
-            fill: $orange;
+            fill: #F58220;
             &:hover {
-                fill: $lightOrange;
+                fill: $orangeHover;
             }
         }
         .iconTrash {
-            fill: $darkGrey;
+            fill: #979797;
             &:hover {
-                fill: $grey;
+                fill: $greyHover;
             }
         }
         .smallLink:hover {
-            color: $lightOrange;
+            color: $orangeHover;
         }
     }
     h3 {
-        @include text(Roboto, 17px, 700);
-        color: red;
-        font-size: 16px;
+        @include text($main-font, 16px, $bold-weight);
+        color: #a6a6a6;
+        padding-left: 15px;
+        text-align: left;
     }
     .smallLink {
-        @include text(Roboto, 16px, 300);
+        @include text($main-font, 16px, $normal-weight);
         color: #56819f;
         line-height: 17px;
         text-decoration: none;
     }
 }
 
+.hrGeneral {
+    margin-left: -11px;
+    margin-right: -11px;
+    color: #eeeeec;
+    border-width: 1px;
+    border-style: solid;
+}
+
 /* Media queries */
 @media(max-width: 767px) {
+    .generalStatistic {
+        .diagram {
+        margin: 0 -15%;
+        height: 45%;
+            canvas {
+                max-width: 100%;
+            }
+        }
+    }
+
     .tableWithLink > .row {
-        text-align: center;
-        margin-bottom: 15px;
+        min-width: 100%;
         border-bottom: 1px solid #eeeeec;
+        text-align: center;
         .iconLink {
             @include size(30px, 30px);
             opacity: 1;
             margin-top: 15px;
+            text-align: center;
         }  
         .iconReference {
-            fill: $orange;
+            fill: #F58220;
         }
         .iconTrash {
-            fill: $darkGrey;
+            fill: #979797;
         }
         h3 {
             line-height: 15px;
             text-align: center;
-            padding-left: 0px;
         }
     }
 }

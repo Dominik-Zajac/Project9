@@ -19,20 +19,20 @@
     margin: 0 auto;
     text-align: left;
     &:hover {
-        background-color: #efefef;
+        background-color: $rowHover;
         .iconLink {
             opacity: 1;
         }
         .iconReference {
-            fill: $orange;
+            fill: #F58220;
             &:hover {
                 fill: $orangeHover;
             }
         }
         .iconTrash {
-            fill: $darkGrey;
+            fill: #979797;
             &:hover {
-                fill: $grey;
+                fill: $greyHover;
             }
         }
         .smallLink:hover {
@@ -40,14 +40,13 @@
         }
     }
     h3 {
-        @include text(Roboto, 17px, 700);
+        @include text($main-font, 16px, $bold-weight);
         color: #a6a6a6;
-        font-size: 16px;
-        text-align: left;
         padding-left: 15px;
+        text-align: left;
     }
     .smallLink {
-        @include text(Roboto, 16px, 300);
+        @include text($main-font, 16px, $normal-weight);
         color: #56819f;
         line-height: 17px;
         text-decoration: none;
@@ -61,24 +60,7 @@
 
 /* Media queries */
 @media(max-width: 767px) {
-    .generalStatistic {
-        .inputDateBox {
-            display: flex;
-            //min-width: 100%;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .diagram {
-        margin: 0 -15%;
-        height: 45%;
-            canvas {
-                max-width: 100%;
-            }
-        }
-    }
-
     .tableWithLink > .row {
-        align-items: center;
         min-width: 100%;
         border-bottom: 1px solid #eeeeec;
         text-align: center;
@@ -89,10 +71,10 @@
             text-align: center;
         }  
         .iconReference {
-            fill: $orange;
+            fill: #F58220;
         }
         .iconTrash {
-            fill: $darkGrey;
+            fill: #979797;
         }
         h3 {
             line-height: 15px;

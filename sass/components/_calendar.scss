@@ -1,24 +1,23 @@
 .c-calendar {
     @include size(370px, 40px);
     border-radius: 3px;
-    border: 1px solid $paleGrey;
+    border: 1px solid $borderGrey;
     &:hover {
-        border: 1px solid $grey;
+        border: 1px solid $borderHover;
         cursor: pointer;
     }
     .separator {
         font-size: 20px;
-        color: $paleGrey;
+        color: $borderGrey;
     }
     input {
-    @include text(Roboto, 14px, 300);
-    color: $black;
-    margin: 8px 10px;
-    text-align: center;
-    }
+        @include text($main-font, 14px, $normal-weight);
+        color: #333;
+        margin: 8px 10px;
+        text-align: center;
+        }
     img {
         @include size(15px, 15px);
-
     }
 }
 
@@ -26,9 +25,8 @@
 @media(max-width: 767px) {
     .c-calendar {
         input {
-            @include text(Roboto, 10px, 300);
+            @include text($main-font, 10px, $normal-weight);
             margin: 8px 5px;
-            text-align: center;
         }
         img {
             visibility: collapse;

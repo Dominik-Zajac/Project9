@@ -1,40 +1,43 @@
 .header {
 	@include size(100%, 60px);
 	display: flex;
-	position: fixed;
-	background: $white;
 	justify-content: flex-end;
-	z-index: 2;
-	border-bottom: 1px solid $paleGrey;
+	position: fixed;
+	background: #FFF;
+	border-bottom: 1px solid $borderGrey;
 
+	z-index: 2;
 	.topMenu {
 		display: flex;
 		align-items: center;
 		height: 60px;
-		border-left: 1px solid $paleGrey;
+		border-left: 1px solid $borderGrey;
 		padding: 20px;
 		&:hover {
-			background-color: $lightGrey;
+			background-color: #F5F5F2;
 			cursor: pointer;
 		}
 		&:hover .numberMoney,
 		&:hover .profileText {
-			color: $lightOrange;
+			color: $orangeHover;
 		}
 		&:hover > a .iconHeader {
 			fill: #000;
 		}
 	}
-	a {
-		text-decoration: none;
+	button {
 		display: flex;
 		align-items: center;
+		border: none;
+		background: none;
+		text-decoration: none;
+		outline: none;
 	}
 	.ring {
 		@include size(8px, 8px);
         position: absolute;
         top: 19px;
-        background: orange;
+        background: #F58220;
         border-radius: 50%;
 	}
 
@@ -44,13 +47,13 @@
 		position: relative;
 	}
 	.numberMoney {
-		@include text(Roboto, 20px, 400);
+		@include text($main-font, 20px, $normal-weight);
 		color: #9c9c9c;
 		margin-right: 10px;
 		margin-left: 10px;
 	}
 	.profileText {
-		@include text(Roboto, 13px, 300);
+		@include text($main-font, 13px, $normal-weight);
 		color: #56819f;
 		margin-left: 5px;
 	}
@@ -76,23 +79,9 @@
 /* Media queries */
 @media(max-width: 767px) {
 	.header {
-		@include size(100px, 60px);
-		display: flex;
-		flex-direction: column;
-		background: none;
-		justify-content: flex-start;
-		z-index: 3;
-		border-bottom: none;
-		top: 55%;
-	  	margin: 0 auto;
-
+		justify-content: center;
 		.topMenu {
-			align-items: center;
-			height: 45px;
 			border-left: none;
-			padding: 25px;
-			display: inline-block;
-			text-align: center;
 			&:hover {
 				background-color: initial;
 			}
@@ -100,18 +89,11 @@
 				fill: white;
 			}
 		}
-		a {
-			text-decoration: none;
-			display: flex;
-			align-items: center;
-		}
 		.ring {
 			display: none;
 		}
 		.iconHeader {
-			align-items: center;
 			fill: #979797;
-			position: relative;
 		}
 		#downArrow {
 			display: none;

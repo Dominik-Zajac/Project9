@@ -1,8 +1,8 @@
 .c-table {
     padding: 10px 20px 20px 20px;
     table{
-    	border-collapse: collapse;
     	@include size(786px, 128px);
+    	border-collapse: collapse;
     }
 	td {
 		border: 1px solid red;
@@ -10,25 +10,21 @@
 
 	}
 	.textTable {
-		font-family: Roboto;
-		color: $darkGrey;
-		font-size: 18px;
-		font-weight: 700;
+		@include text($main-font, 18px, $bold-weight);
+		color: #979797;
 		text-align: left;
 	}
 	.linkTable > a {
-		font-family: Roboto;
-		color: $blue;
-		font-size: 16px;
-		font-weight: 300;
+		@include text($main-font, 16px, $normal-weight);
+		color: #56819F;
 		text-align: left;
 		text-decoration: none;
 	}
 }
 tr { 
-    border-bottom: 1px solid $paleGrey;
+    border-bottom: 1px solid #E3E3E3;
 	&:last-of-type {
-		border-bottom: 1px solid $paleGrey;
+		border-bottom: 1px solid #E3E3E3;
 	}
 }
 tbody {
@@ -42,18 +38,16 @@ tbody {
 
 .trashIcon, .linksIcon {
 	opacity: 0;
-	    max-width: 14px;
+	max-width: 14px;
 	max-height: 15px;
-
 }
 tr:hover > .linksIcon {
 	opacity: 1;
-	    max-width: 14px;
+	max-width: 14px;
 	max-height: 15px;
 }
-
 tr:hover > .trashIcon {
 	opacity: 1;
-	    max-width: 14px;
+	max-width: 14px;
 	max-height: 15px;
 }

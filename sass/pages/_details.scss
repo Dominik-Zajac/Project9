@@ -1,5 +1,4 @@
 .details {
-/* Calendar */
 .inputDateBox {
     display: flex;
     justify-content: center;
@@ -18,7 +17,6 @@
             fill: white;
         }
     }
-/* Table */
     .tableWrapper {
         display: flex;
         flex-direction: column;
@@ -33,7 +31,7 @@
             border-collapse: collapse;
         }
         a {
-            @include text(Roboto, 13px, 700);
+            @include text($main-font, 13px, $bold-weight);
             color: #a6a6a6;
             text-decoration: none;
             line-height: 40px;
@@ -53,7 +51,6 @@
     }
 }
 
-/*Line*/ 
 .hrDetails {
     margin: 0;
     width: 100%;

@@ -3,22 +3,23 @@
 	border: none;
 	cursor: pointer;
 
-	@include text(Roboto, 18px, 300);
-	color: $white;
+	@include text($main-font, 18px, $normal-weight);
+	color: $textButton;
 	line-height: 42px;
 	text-align: center;
+	outline: none;
 }
 
 .btnOrange {
-	background-color: $orange;
+	background-color: #F58220;
 }
 .btnLightOrange {
-	background-color: $lightOrange;
+	background-color: $orangeHover;
 }
 
 .btnDarkGrey {
-	background-color: $darkGrey;
+	background-color: #979797;
 }
 .btnGrey {
-	background-color: $grey;
+	background-color: #bababa;
 }
